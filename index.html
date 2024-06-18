@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+Author: Tejindra Khatri
+Date: June 17,2024
+Description: This HTML file is for Part 2 of the assignment. It enhances the user interface by integrating jQuery UI components such as sliders and tabs. The sliders are connected to input fields for dynamic interaction, and multiple data tables are managed using a tabbed interface.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Table Generator</h1>
+        <form id="multiplicationForm">
+            <label for="startHorizontal">Starting Number (Horizontal):</label>
+            <input type="number" id="startHorizontal" name="startHorizontal" min="-50" max="50" required>
+            <div id="sliderStartHorizontal"></div>
+            <label for="endHorizontal">Ending Number (Horizontal):</label>
+            <input type="number" id="endHorizontal" name="endHorizontal" min="-50" max="50" required>
+            <div id="sliderEndHorizontal"></div>
+            <br>
+            <label for="startVertical">Starting Number (Vertical):</label>
+            <input type="number" id="startVertical" name="startVertical" min="-50" max="50" required>
+            <div id="sliderStartVertical"></div>
+            <label for="endVertical">Ending Number (Vertical):</label>
+            <input type="number" id="endVertical" name="endVertical" min="-50" max="50" required>
+            <div id="sliderEndVertical"></div>
+            <br>
+            <button type="submit">Generate Table</button>
+            <div id="errorMessages" class="error"></div>
+        </form>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Input</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div id="tableContainer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
