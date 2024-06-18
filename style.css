@@ -1,0 +1,93 @@
+/* 
+Tejindra Khatri
+06/17/2024
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin: 5px 0;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Slider Styles */
+#sliderStartHorizontal,
+#sliderEndHorizontal,
+#sliderStartVertical,
+#sliderEndVertical {
+    margin: 10px 0;
+}
+
+/* Tab Styles */
+#tabs {
+    margin-top: 20px;
+}
+
+#tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#tabs ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#tabs ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+#tabs ul li a:hover {
+    background-color: #bbb;
+}
+
+#tabs ul li .ui-icon-close {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#tabs div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
